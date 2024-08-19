@@ -1,153 +1,154 @@
+/** @format */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 body {
-font-family: "DM Sans", sans-serif;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-color: whitesmoke;
-background-color: #171717;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: whitesmoke;
+  background-color: #171717;
 }
 
-header, footer {
-text-align: center;
+header,
+footer {
+  text-align: center;
 }
 
 header {
-font-family: "DM Sans", sans-serif;
-position: relative;
-background-image: url('cape\ cover.jpg');
-background-size: cover;
-background-position: center;
-color: white;
-text-align: center;
-padding: 150px;
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px;
 }
 
 .header-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-display: flex;
-justify-content: center;
-align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-overlay h1 {
-font-size: 50px;
+  font-size: 50px;
 }
 
 main {
-padding: 20px;
-flex-grow: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 section {
-margin-bottom: 20px;
-max-width: 600px;
-width: 100%;
-text-align: center;
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
 }
 
 footer {
-background-color: #333;
-color: white;
-padding: 20px;
-text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 button {
-padding: 10px 20px;
-background-color: rgb(242, 122, 62);
-border: none;
-color: rgb(0, 0, 0);
-cursor: pointer;
-font-size: 16px;
-border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(242, 122, 62);
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 button:hover {
-background-color: #333;
-color: white;
+  background-color: #333;
+  color: white;
 }
 
 img {
-border-radius: 50%; /* Make the image rounded */
-width: 150px; /* Adjust the size of the image as needed */
-height: 150px;
-margin-bottom: 20px; 
+  border-radius: 50%; /* Make the image rounded */
+  width: 150px; /* Adjust the size of the image as needed */
+  height: 150px;
+  margin-bottom: 20px;
 }
 
 h2 {
-text-align: center;
-color: rgb(242, 122, 62);
+  text-align: center;
+  color: rgb(242, 122, 62);
 }
 
-li, a {
-list-style: none;
-text-align: center;
+li,
+a {
+  list-style: none;
+  text-align: center;
 }
 
 a {
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-color: rgb(242, 122, 62);
+  color: rgb(242, 122, 62);
 }
 
 @keyframes heartbeat {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(1);
-    }
-    75% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .heartbeat {
-animation: heartbeat 7.5s infinite; /* Adjust the duration as needed */
+  animation: heartbeat 7.5s infinite; /* Adjust the duration as needed */
 }
-
 
 /* Responsive layout - Mobile */
 @media screen and (max-width: 600px) {
-    header {
-        font-size: 20px;
-    }
+  header {
+    font-size: 20px;
+  }
 }
 
 /* Responsive layout - Tablet */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    header {
-        font-size: 24px;
-    }
+  header {
+    font-size: 24px;
+  }
 }
 
 /* Responsive layout - Desktop */
 @media screen and (min-width: 1025px) {
-    header {
-        font-size: 28px;
-    }
+  header {
+    font-size: 28px;
+  }
 }
