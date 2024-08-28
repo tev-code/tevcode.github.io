@@ -27,6 +27,7 @@ header {
   color: white;
   text-align: center;
   padding: 150px;
+  height: 100px;
 }
 
 .header-overlay {
@@ -92,7 +93,7 @@ img {
 
 h2 {
   text-align: center;
-  color: rgb(242, 122, 62);
+  color: rgb(217, 217, 217);
 }
 
 li,
@@ -107,7 +108,7 @@ a {
 }
 
 a:hover {
-  color: rgb(242, 122, 62);
+  color: rgb(255, 62, 55);
 }
 
 @keyframes heartbeat {
