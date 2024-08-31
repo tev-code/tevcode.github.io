@@ -1,155 +1,225 @@
 /** @format */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/osaka-sans-serif?styles=5796");
 
 body {
-  font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
   background-color: #171717;
+  color: whitesmoke;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-header,
-footer {
-  text-align: center;
+.dashboard {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
 }
 
-header {
-  font-family: "DM Sans", sans-serif;
-  position: relative;
-  background-image: url("background.jpg");
+.sidebar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("background.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
   color: white;
-  text-align: center;
-  padding: 150px;
-  height: 100px;
-}
-
-.header-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-overlay h1 {
-  font-size: 50px;
-}
-
-main {
-  padding: 20px;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  transition: left 0.3s;
+  z-index: 1000;
+  width: 300px;
 }
 
-section {
-  margin-bottom: 20px;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: rgb(242, 122, 62);
+.closebtn {
+  font-size: 36px;
+  background: none;
   border: none;
-  color: rgb(0, 0, 0);
+  color: white;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-button:hover {
-  background-color: #333;
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hidden by default on PC */
+}
+
+.sidebar h1 {
+  margin-bottom: 20px;
+  color: rgb(202, 154, 210);
+  text-align: center;
+  font-family: "Osaka-Sans Serif", sans-serif;
+}
+
+h2 {
+  font-family: "Osaka-Sans Serif", sans-serif;
+  color: rgb(202, 154, 210);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
   color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  margin-left: 250px; /* Space for the sidebar */
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section h2 {
+  text-align: center;
+  align-items: center;
 }
 
 img {
-  border-radius: 50%; /* Make the image rounded */
-  width: 150px; /* Adjust the size of the image as needed */
+  border-radius: 50%;
+  width: 150px;
   height: 150px;
   margin-bottom: 20px;
 }
 
-h2 {
+li {
+  list-style: none;
   text-align: center;
-  color: rgb(217, 217, 217);
 }
 
-li,
-a {
-  list-style: none;
+p,
+ul {
+  margin-bottom: 20px;
+  color: #d9d9d9;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #d9d9d9;
 }
 
 a:hover {
-  color: rgb(255, 62, 55);
+  color: rgb(202, 154, 210);
 }
 
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+/* Ensure h2 headers are aligned */
+h2 {
+  text-align: center; /* Center align the header */
+  margin-top: 20px; /* Add some margin if needed */
+  margin-bottom: 10px; /* Space between header and content */
 }
 
-.heartbeat {
-  animation: heartbeat 7.5s infinite; /* Adjust the duration as needed */
+/* Hide the close button on PC */
+/* General styles for all devices */
+.closebtn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-/* Responsive layout - Mobile */
-@media screen and (max-width: 600px) {
-  header {
-    font-size: 20px;
-  }
-}
-
-/* Responsive layout - Tablet */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  header {
-    font-size: 24px;
-  }
-}
-
-/* Responsive layout - Desktop */
+/* Hide the close button on PC */
 @media screen and (min-width: 1025px) {
-  header {
-    font-size: 28px;
+  .closebtn {
+    display: none;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 60px; /* Sidebar is slightly visible by default */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; /* Sidebar is slightly visible from the left */
+    overflow-x: hidden; /* Hide overflow */
+    transition: width 0.3s, left 0.3s; /* Smooth transition */
+    z-index: 1000;
+    padding: 10px 0; /* Reduced padding for smaller size */
+  }
+
+  .sidebar.open {
+    width: 100%; /* Expand sidebar when open */
+  }
+
+  .sidebar ul li {
+    font-size: 12px; /* Smaller font size for links */
+  }
+
+  .sidebar ul li a {
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .closebtn {
+    font-size: 20px; /* Smaller close button */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .openbtn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sidebar.hidden {
+    left: -60px; /* Hide sidebar completely */
+  }
+
+  .sidebar.open.hidden {
+    left: 0; /* Show sidebar when open */
+    width: 100%; /* Sidebar takes full width when open */
   }
 }

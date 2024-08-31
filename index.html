@@ -5,131 +5,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="public, max-age=604800" />
     <link rel="stylesheet" href="style.css" />
     <title>Tevin Dirks</title>
   </head>
   <body>
-    <header>
-      <div class="header-overlay">
-        <h1 class="heartbeat">Tevin Dirks</h1>
-      </div>
-    </header>
-    <main id="cv">
-      <section>
-        <img src="me.jpg" alt="Your Image" />
-        <h2>About Me</h2>
-        <p>
-          I am a driven individual who embarked on a transformative journey from
-          the hospitality industry to the realm of technology. With six years of
-          experience in hospitality under my belt, I made the bold decision to
-          pursue my passion for coding. I embarked on a part-time study journey,
-          financing my own coding bootcamp to transition into a full stack web
-          developer role. Prior to this, I studied sport and fitness at
-          Northlink College, earning a diploma in the field. Currently employed
-          as a junior web developer in fintech, I thrive on challenges,
-          embracing discomfort as a catalyst for growth. Despite being in the
-          early stages of my career, my tenacity shines through as I fearlessly
-          tackle highly complex tasks, always striving to grasp the
-          fundamentals.
-        </p>
-      </section>
-      <section>
-        <h2>Hands On Experience</h2>
-        <p>
-          During my tenure, I spearheaded the development of a Vue.js
-          replication of our company's WordPress website, employing Vuetify for
-          comprehensive styling and incorporating external dependencies like
-          axios for streamlined sign-up form requests. This project culminated
-          in successful deployment to Firebase via GitHub and subsequently to
-          Google Cloud Platform (GCP). Concurrently, I led a separate initiative
-          to construct an internal service desk and ticketing system using
-          Vue.js for the frontend, Node.js for backend functionality, and
-          initially MySQL for data management. However, due to specific
-          deployment requirements, we transitioned to MongoDB, a non-relational
-          database. Despite the primary WordPress site remaining operational,
-          the Vue.js site underwent rigorous testing. Additionally, I undertook
-          responsibilities such as managing internal reporting via Google
-          Sheets, executing mass payments across various systems, and
-          orchestrating API calls with XML and JSON responses. These experiences
-          underscore my adeptness in frontend and backend development, as well
-          as my proficiency in navigating diverse technological landscapes to
-          meet organizational needs.
-        </p>
-      </section>
-      <section>
-        <h2>Education/Timeline</h2>
-        <p>Bergvliet High School - 2008-2012</p>
-        <p>
-          Persuing a semi-pro football career playing 4th tier (SAB League) -
-          2013
-        </p>
-        <p>Diploma in Sports Fitness - Northlink College 2014-2016</p>
-        <p>
-          Certification in Music Production using FL studio - SAE Institute 2017
-        </p>
-        <p>Full Stack Web Developer - Hyperion Development 2019-2020</p>
-      </section>
-      <section>
-        <h2>Experience</h2>
-        <p>
-          Hussar Grill
-          <span>Waitron</span>
-          - 2015-2021
-        </p>
-        <p>
-          Pro Fintech
-          <span>Junior Web Developer (6 month contract)</span>
-          - June 2021 - December 2021
-        </p>
-        <p>
-          Pro Fintech
-          <span>Junior Web Developer (permanent)</span>
-          January 2022 - present
-        </p>
-      </section>
-      <section>
-        <h2>Technologies</h2>
-
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript/Typescript</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>Vue.js (professionally)</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </section>
-      <section>
-        <h2>Skills and Certifications</h2>
-
-        <li>
-          <a
-            href="https://www.cloudskillsboost.google/public_profiles/605fad38-58dd-4f6d-8689-68f9cd270900"
-            target="_blank"
-          >
-            Google Cloud Skills
-          </a>
-        </li>
-        <li>
-          <a href="certificate.pdf" target="_blank">
-            HyperionDev Full Stack Web Development Certification
-          </a>
-        </li>
-      </section>
-      <section>
-        <h2>Links</h2>
-
-        <li>
-          <a href="https://www.linkedin.com/in/tevin-chad/" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/tev-code" target="_blank">GitHub</a>
-        </li>
-      </section>
-    </main>
+    <div class="dashboard">
+      <aside class="sidebar hidden">
+        <button class="closebtn" onclick="closeNav()">X</button>
+        <h1>Tevin Dirks</h1>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education/Timeline</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#certifications">Skills and Certifications</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </aside>
+      <main class="content">
+        <span class="openbtn" onclick="openNav()">☰</span>
+        <section id="about">
+          <img src="me.jpg" alt="Your Image" />
+          <h2>About Me</h2>
+          <p>
+            I am a driven individual who embarked on a transformative journey
+            from the hospitality industry to the realm of technology. With six
+            years of experience in hospitality under my belt, I made the bold
+            decision to pursue my passion for coding. I embarked on a part-time
+            study journey, financing my own coding bootcamp to transition into a
+            full stack web developer role. Prior to this, I studied sport and
+            fitness at Northlink College, earning a diploma in the field.
+            Currently employed as a junior web developer in fintech, I thrive on
+            challenges, embracing discomfort as a catalyst for growth. Despite
+            being in the early stages of my career, my tenacity shines through
+            as I fearlessly tackle highly complex tasks, always striving to
+            grasp the fundamentals.
+          </p>
+        </section>
+        <section id="experience">
+          <h2>Hands-On Experience</h2>
+          <p>
+            During my tenure, I spearheaded the development of a Vue.js
+            replication of our company's WordPress website, employing Vuetify
+            for comprehensive styling and incorporating external dependencies
+            like axios for streamlined sign-up form requests. This project
+            culminated in successful deployment to Firebase via GitHub and
+            subsequently to Google Cloud Platform (GCP). Concurrently, I led a
+            separate initiative to construct an internal service desk and
+            ticketing system using Vue.js for the frontend, Node.js for backend
+            functionality, and initially MySQL for data management. However, due
+            to specific deployment requirements, we transitioned to MongoDB, a
+            non-relational database. Despite the primary WordPress site
+            remaining operational, the Vue.js site underwent rigorous testing.
+            Additionally, I undertook responsibilities such as managing internal
+            reporting via Google Sheets, executing mass payments across various
+            systems, and orchestrating API calls with XML and JSON responses.
+            These experiences underscore my adeptness in frontend and backend
+            development, as well as my proficiency in navigating diverse
+            technological landscapes to meet organizational needs.
+          </p>
+        </section>
+        <section id="education">
+          <h2>Education/Timeline</h2>
+          <p>Bergvliet High School - 2008-2012</p>
+          <p>Pursuing a semi-pro football career - 2013</p>
+          <p>Diploma in Sports Fitness - Northlink College 2014-2016</p>
+          <p>Certification in Music Production - SAE Institute 2017</p>
+          <p>Full Stack Web Developer - Hyperion Development 2019-2020</p>
+        </section>
+        <section id="technologies">
+          <h2>Technologies</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript/Typescript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Vue.js (professionally)</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </section>
+        <section id="certifications">
+          <h2>Skills and Certifications</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.cloudskillsboost.google/public_profiles/605fad38-58dd-4f6d-8689-68f9cd270900"
+                target="_blank"
+              >
+                Google Cloud Profile
+              </a>
+            </li>
+            <li>
+              <a href="certificate.pdf" target="_blank">
+                HyperionDev Full Stack Web Development Certification
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="links">
+          <h2>Links</h2>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/tevin-chad/" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tev-code" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
