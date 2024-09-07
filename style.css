@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/osaka-sans-serif?styles=5796");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   margin: 0;
@@ -61,11 +61,11 @@ body {
   margin-bottom: 20px;
   color: rgb(202, 154, 210);
   text-align: center;
-  font-family: "Osaka-Sans Serif", sans-serif;
+  font-family: ;
 }
 
 h2 {
-  font-family: "Osaka-Sans Serif", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: rgb(202, 154, 210);
 }
 
@@ -104,7 +104,7 @@ h2 {
 }
 
 .section h2 {
-  font-family: "Osaka-Sans Serif", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: rgb(202, 154, 210);
   text-align: center; /* Center align the headers */
   margin-top: 20px; /* Space above header */
