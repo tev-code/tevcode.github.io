@@ -1,22 +1,29 @@
 /** @format */
 
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.querySelector(".sidebar");
+
+  // Show sidebar by default on mobile
+  if (window.innerWidth <= 1024) {
+    sidebar.classList.remove("hidden");
+  }
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      sidebar.classList.add("hidden"); // Hide sidebar on larger screens
+    } else {
+      sidebar.classList.remove("hidden"); // Ensure it's visible on smaller screens
+    }
+  });
+});
+
+// Open and close functions
 function openNav() {
   const sidebar = document.querySelector(".sidebar");
-  sidebar.classList.add("open");
   sidebar.classList.remove("hidden");
 }
 
 function closeNav() {
   const sidebar = document.querySelector(".sidebar");
-  sidebar.classList.remove("open");
   sidebar.classList.add("hidden");
 }
-
-// Optional: Close sidebar when clicking outside (improves UX)
-document.addEventListener("click", function (event) {
-  const sidebar = document.querySelector(".sidebar");
-  const openbtn = document.querySelector(".openbtn");
-  if (!sidebar.contains(event.target) && !openbtn.contains(event.target)) {
-    closeNav();
-  }
-});
