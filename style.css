@@ -58,14 +58,14 @@ body {
 
 .sidebar h1 {
   margin-bottom: 20px;
-  color: rgb(202, 154, 210);
+  color: rgb(107, 105, 255);
   text-align: center;
   font-family: "Kanit", sans-serif;
 }
 
 h2 {
   font-family: "Kanit", sans-serif;
-  color: rgb(202, 154, 210);
+  color: rgb(107, 105, 255);
 }
 
 .sidebar ul {
@@ -104,7 +104,7 @@ h2 {
 
 .section h2 {
   font-family: "Kanit", sans-serif;
-  color: rgb(202, 154, 210);
+  color: rgb(107, 105, 255);
   text-align: center; /* Center align the headers */
   margin-top: 20px; /* Space above header */
   margin-bottom: 10px; /* Space below header */
@@ -139,7 +139,7 @@ a {
 }
 
 a:hover {
-  color: rgb(202, 154, 210);
+  color: rgb(107, 105, 255);
 }
 
 /* Ensure h2 headers are aligned */

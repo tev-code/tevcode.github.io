@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function openNav() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.remove("hidden"); // Remove hidden class to show sidebar
+  sidebar.classList.add("open"); // Add open class when sidebar is visible
 }
 
-// Function to close the sidebar
 function closeNav() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.add("hidden"); // Add hidden class to hide sidebar
+  sidebar.classList.remove("open"); // Remove open class when sidebar is hidden
 }
