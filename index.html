@@ -5,120 +5,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Tevin Dirks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="icon" href="/favicon-16x16.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="dashboard">
-      <aside class="sidebar hidden">
-        <button class="closebtn" onclick="closeNav()">X</button>
-        <h1>Tevin Dirks</h1>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education/Timeline</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#certifications">Skills and Certifications</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="2024CV.pdf" download>Download CV</a></li>
-        </ul>
-      </aside>
-      <main class="content">
-        <span class="openbtn" onclick="openNav()">☰</span>
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-            I am a driven individual who embarked on a transformative journey
-            from the hospitality industry to the realm of technology. With six
-            years of experience in hospitality under my belt, I made the bold
-            decision to pursue my passion for coding. I embarked on a part-time
-            study journey, financing my own coding bootcamp to transition into a
-            full stack web developer role. Prior to this, I studied sport and
-            fitness at Northlink College, earning a diploma in the field.
-            Currently employed as a junior web developer in fintech, I thrive on
-            challenges, embracing discomfort as a catalyst for growth. Despite
-            being in the early stages of my career, my tenacity shines through
-            as I fearlessly tackle highly complex tasks, always striving to
-            grasp the fundamentals.
-          </p>
-        </section>
-        <section id="experience">
-          <h2>Hands-On Experience</h2>
-          <p>
-            During my tenure, I spearheaded the development of a Vue.js
-            replication of our company's WordPress website, employing Vuetify
-            for comprehensive styling and incorporating external dependencies
-            like axios for streamlined sign-up form requests. This project
-            culminated in successful deployment to Firebase via GitHub and
-            subsequently to Google Cloud Platform (GCP). Concurrently, I led a
-            separate initiative to construct an internal service desk and
-            ticketing system using Vue.js for the frontend, Node.js for backend
-            functionality, and initially MySQL for data management. However, due
-            to specific deployment requirements, we transitioned to MongoDB, a
-            non-relational database. Despite the primary WordPress site
-            remaining operational, the Vue.js site underwent rigorous testing.
-            Additionally, I undertook responsibilities such as managing internal
-            reporting via Google Sheets, executing mass payments across various
-            systems, and orchestrating API calls with XML and JSON responses.
-            These experiences underscore my adeptness in frontend and backend
-            development, as well as my proficiency in navigating diverse
-            technological landscapes to meet organizational needs.
-          </p>
-        </section>
-        <section id="education">
-          <h2>Education/Timeline</h2>
-          <p>Bergvliet High School - 2008-2012</p>
-          <p>Pursuing a semi-pro football career - 2013</p>
-          <p>Diploma in Sports Fitness - Northlink College 2014-2016</p>
-          <p>Certification in Music Production - SAE Institute 2017</p>
-          <p>Full Stack Web Developer - Hyperion Development 2019-2020</p>
-        </section>
-        <section id="technologies">
-          <h2>Technologies</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript/Typescript</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Vue.js (professionally)</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </section>
-        <section id="certifications">
-          <h2>Skills and Certifications</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.cloudskillsboost.google/public_profiles/605fad38-58dd-4f6d-8689-68f9cd270900"
-                target="_blank"
-              >
-                Google Cloud Profile
-              </a>
-            </li>
-            <li>
-              <a href="certificate.pdf" target="_blank">
-                HyperionDev Full Stack Web Development Certification
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section id="links">
-          <h2>Links</h2>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/tevin-chad/" target="_blank">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/tev-code" target="_blank">GitHub</a>
-            </li>
-          </ul>
-        </section>
-      </main>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Tevin Dirks</div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+    </nav>
+
+    <div class="expanded-navbar">
+      <h3 class="navbarHeading">Resume</h3>
+      <ul>
+        <li><a href="./Tevin Dirks CV.pdf" target="_blank">Resume Download</a></li>
+        <li><a href="" target="_blank">LinkedIn</a></li>
+        <li><a href="" target="_blank">Github</a></li>
+      </ul>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="header-card">
+          <img src="TEVIN.png" alt="Monkae Logo" class="TextLogo" />
+        <h1>Tevin Dirks Website</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- First Section: About -->
+    <section id="about" class="info-section">
+      <div class="card">
+        <h2>About Me</h2>
+      <img src="TEVIN.png" alt="Small Logo" class="card-logo" />
+        <p>
+        I am a certified web developer with a diverse background that bridges the worlds of hospitality and technology. For over six years, I worked in the hospitality industry, where I honed valuable customer service skills and developed a strong work ethic. During this time, I discovered a passion for web development and programming, sparking my desire to pursue a career in tech. Prior to my time in hospitality, I earned a diploma in sports fitness from Northlink College, which helped shape my discipline and focus. Driven by my growing interest in coding, I made the decision to save up and enroll in a bootcamp with Hyperion Development to formally develop my programming skills. Today, I am working as a web developer at Trade245, a Forex brokerage, where I continue to build on my technical expertise and passion for web development.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Crypto Background</h2>
+         <img src="TEVIN.png" alt="Small Logo" class="card-logo" />
+        <p>
+       I’ve been actively involved in the crypto space for over three and a half years, initially starting as a newcomer trying to make quick profits. Over time, what began as a curiosity for the financial aspects of crypto has evolved into a genuine passion for the technology and its potential. While I wouldn’t claim to be a crypto genius, I definitely consider myself a “degen” with a deep interest in everything from decentralized storage to meme coins. I’ve been a loyal follower and subscriber to Crypto Banter for three years, catching up on my morning updates as part of my daily routine. Although I haven't been part of Whale School, my focus has shifted from mere trading to a stronger appreciation for the technology behind blockchain and the search for hidden gems across major chains. As a web developer, I have an affinity for the technical aspects of the crypto world, and I’m particularly drawn to discovering and understanding emerging technologies within the space.
+
+
+
+
+        </p>
+      </div>
+       
+
+
+         <div class="card">
+             <h2>Tech Stack</h2>
+              <img src="TEVIN.png" alt="Small Logo" class="card-logo" />
+        <p>
+          <ul>
+       <li><h3>Frontend</h3><p> html, css and Javascript. Along with Vue (professional experience).</p> </li><br>
+       <li><h3>Backend</h3><p>Node.js and Express</p> </li><br>
+       <li><h3>Cloud</h3><p>Google Cloud Platform</p></li>
+    </ul>
+        </p>
+        <br>
+           <a href="mailto:dirkstevcode@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a><p>dirkstevcode@gmail.com</p> 
+        </div>
+     
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+       <h1 class="footer-logo">
+    <img src="TEVIN.png" alt="Monkae Logo" />
+  </h1>
+      <p>&copy; 2025 Monkae. All rights reserved.</p>
+        <div class="social-icons">
+       
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      
+      
+      </div>
+    
+    </footer>
+
+    <!-- Scroll Reveal Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>
+
+<script>
+  // Initialize ScrollReveal
+  ScrollReveal().reveal(".info-section .card", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 800,
+    delay: 200,
+    opacity: 0,
+    easing: "ease-in-out",
+    reset: true
+  });
+
+  ScrollReveal().reveal(".pricing-section", {
+    origin: "top",
+    distance: "50px",
+    duration: 800,
+    delay: 400,
+    opacity: 0,
+    easing: "ease-in-out",
+    reset: true
+  });
+  
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  function toggleMenu() {
+    const navbar = document.querySelector('.expanded-navbar');
+
+    const hamburger = document.querySelector('.hamburger');
+
+    navbar.classList.toggle('active');
+
+    hamburger.classList.toggle('active');
+  }
+  </script>
